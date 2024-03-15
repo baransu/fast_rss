@@ -14,7 +14,7 @@ defmodule FastRSS do
       otp_app: :fast_rss,
       crate: "fastrss",
       base_url: "#{github_url}/releases/download/v#{version}",
-      force_build: System.get_env("FORCE_BUILD") in ["1", "true"],
+      # force_build: System.get_env("FORCE_BUILD") in ["1", "true"],
       version: version
 
     # When your NIF is loaded, it will override this function.
